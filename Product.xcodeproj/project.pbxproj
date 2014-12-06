@@ -47,6 +47,8 @@
 		B29B21531A33BDDA00685DDB /* map2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B214C1A33BDDA00685DDB /* map2.png */; };
 		B29B21541A33BDDA00685DDB /* whentext.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B214D1A33BDDA00685DDB /* whentext.png */; };
 		B29B21551A33BDDA00685DDB /* wheretext.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B214E1A33BDDA00685DDB /* wheretext.png */; };
+		B29B21571A33C24E00685DDB /* lastone.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21561A33C24E00685DDB /* lastone.png */; };
+		B29B215A1A33C35700685DDB /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B21591A33C35700685DDB /* ScheduleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,9 @@
 		B29B214C1A33BDDA00685DDB /* map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map2.png; sourceTree = "<group>"; };
 		B29B214D1A33BDDA00685DDB /* whentext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whentext.png; sourceTree = "<group>"; };
 		B29B214E1A33BDDA00685DDB /* wheretext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wheretext.png; sourceTree = "<group>"; };
+		B29B21561A33C24E00685DDB /* lastone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lastone.png; sourceTree = "<group>"; };
+		B29B21581A33C35700685DDB /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		B29B21591A33C35700685DDB /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +163,8 @@
 				B29B210D1A33A34B00685DDB /* VideoViewController.m */,
 				B29B212E1A33B61F00685DDB /* TaskExplanationViewController.h */,
 				B29B212F1A33B61F00685DDB /* TaskExplanationViewController.m */,
+				B29B21581A33C35700685DDB /* ScheduleViewController.h */,
+				B29B21591A33C35700685DDB /* ScheduleViewController.m */,
 				B29B20CE1A33804A00685DDB /* Images.xcassets */,
 				B29B20D01A33804A00685DDB /* LaunchScreen.xib */,
 				B29B20C11A33804A00685DDB /* Supporting Files */,
@@ -227,6 +234,7 @@
 		B29B21471A33BDDA00685DDB /* yo */ = {
 			isa = PBXGroup;
 			children = (
+				B29B21561A33C24E00685DDB /* lastone.png */,
 				B29B21481A33BDDA00685DDB /* form1.png */,
 				B29B21491A33BDDA00685DDB /* form2.png */,
 				B29B214A1A33BDDA00685DDB /* list1.png */,
@@ -350,6 +358,7 @@
 				B29B20FC1A3397B200685DDB /* Rectangle 1 + My current tasks.png in Resources */,
 				B29B214F1A33BDDA00685DDB /* form1.png in Resources */,
 				B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */,
+				B29B21571A33C24E00685DDB /* lastone.png in Resources */,
 				B29B20FB1A3397B200685DDB /* Rectangle 1 + Task history.png in Resources */,
 				B29B21511A33BDDA00685DDB /* list1.png in Resources */,
 			);
@@ -370,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29B20CA1A33804A00685DDB /* ViewController.m in Sources */,
+				B29B215A1A33C35700685DDB /* ScheduleViewController.m in Sources */,
 				B29B21301A33B61F00685DDB /* TaskExplanationViewController.m in Sources */,
 				B29B20C71A33804A00685DDB /* AppDelegate.m in Sources */,
 				B29B210E1A33A34B00685DDB /* VideoViewController.m in Sources */,

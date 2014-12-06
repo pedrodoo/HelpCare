@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -93,7 +93,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="Pdq-aW-fgE"/>
+                    <navigationItem key="navigationItem" title="Home" id="Pdq-aW-fgE"/>
                     <value key="contentSizeForViewInPopover" type="size" width="500" height="667"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
@@ -201,6 +201,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Choose a Task"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCR-pk-QRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -296,6 +299,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Detail Task"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="recorderImage" destination="8cc-3Z-Qca" id="dlg-OW-H2q"/>
                     </connections>
@@ -379,6 +385,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Choose Location"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8uE-Jp-Sxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -459,6 +468,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Choose Location"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="De6-Xa-1sU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -608,15 +620,18 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Choose Location"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPq-DL-Snc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3900" y="180"/>
         </scene>
-        <!--View Controller-->
+        <!--Schedule View Controller-->
         <scene sceneID="2PL-wk-cze">
             <objects>
-                <viewController id="GPe-mT-7Bn" sceneMemberID="viewController">
+                <viewController id="GPe-mT-7Bn" customClass="ScheduleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e9B-4d-fNW"/>
                         <viewControllerLayoutGuide type="bottom" id="TQW-z5-hs7"/>
@@ -663,7 +678,19 @@
                                     <rect key="frame" x="44" y="251" width="97" height="65"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="ZPk-hg-CIr" kind="show" id="aiD-21-oLO"/>
+                                    <action selector="todayButtonPressed:" destination="GPe-mT-7Bn" eventType="touchUpInside" id="Lox-z9-BFl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8n-zm-KkO">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="491" width="184" height="69"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="1rM-2a-dNH" kind="show" id="Q0H-FP-VTZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -675,6 +702,7 @@
                                 <exclude reference="DXw-Y1-H1C"/>
                                 <exclude reference="oXn-Z0-dqi"/>
                                 <exclude reference="huh-bg-3aY"/>
+                                <exclude reference="k8n-zm-KkO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -684,27 +712,34 @@
                                 <include reference="DXw-Y1-H1C"/>
                                 <include reference="oXn-Z0-dqi"/>
                                 <include reference="huh-bg-3aY"/>
+                                <include reference="k8n-zm-KkO"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Schedule Time"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="scheduleImageView" destination="oXn-Z0-dqi" id="xbm-U4-l8a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HsR-7E-tRc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4435.5" y="180"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="CN6-Pp-XOO">
+        <scene sceneID="cLZ-gG-bKe">
             <objects>
-                <viewController id="ZPk-hg-CIr" sceneMemberID="viewController">
+                <viewController id="1rM-2a-dNH" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mOz-x8-EtE"/>
-                        <viewControllerLayoutGuide type="bottom" id="q8Z-Hf-QtH"/>
+                        <viewControllerLayoutGuide type="top" id="He4-3f-ymH"/>
+                        <viewControllerLayoutGuide type="bottom" id="etW-sb-pzk"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kpB-pM-zwy">
+                    <view key="view" contentMode="scaleToFill" id="x0D-am-ecJ">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-zD-0gm">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-YX-IJr">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -713,7 +748,7 @@
                                     <rect key="frame" x="0.0" y="64" width="224" height="85"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uBR-a5-1rv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zcn-bc-aKc">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Rectangle 1 + ?.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -722,42 +757,37 @@
                                     <rect key="frame" x="224" y="64" width="96" height="85"/>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whentext.png" translatesAutoresizingMaskIntoConstraints="NO" id="otZ-a1-723">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lastone.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sme-gv-IZx">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="149" width="320" height="85"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="form2.png" translatesAutoresizingMaskIntoConstraints="NO" id="69z-cP-STe">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="234" width="320" height="334"/>
+                                    <rect key="frame" x="0.0" y="147" width="320" height="421"/>
                                 </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="JQr-zD-0gm"/>
-                                <exclude reference="uBR-a5-1rv"/>
-                                <exclude reference="otZ-a1-723"/>
-                                <exclude reference="69z-cP-STe"/>
+                                <exclude reference="2Nw-YX-IJr"/>
+                                <exclude reference="Zcn-bc-aKc"/>
+                                <exclude reference="Sme-gv-IZx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="JQr-zD-0gm"/>
-                                <include reference="uBR-a5-1rv"/>
-                                <include reference="otZ-a1-723"/>
-                                <include reference="69z-cP-STe"/>
+                                <include reference="2Nw-YX-IJr"/>
+                                <include reference="Zcn-bc-aKc"/>
+                                <include reference="Sme-gv-IZx"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Schedule Time"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ppf-6l-h1C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxN-vf-O18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4977" y="180"/>
+            <point key="canvasLocation" x="5503.5" y="180"/>
         </scene>
     </scenes>
     <resources>
@@ -771,9 +801,9 @@
         <image name="errand.png" width="320" height="85"/>
         <image name="explain msg.png" width="320" height="85"/>
         <image name="form1.png" width="320" height="314"/>
-        <image name="form2.png" width="320" height="312"/>
         <image name="home chore.png" width="320" height="85"/>
         <image name="kong-poster.jpeg" width="326" height="326"/>
+        <image name="lastone.png" width="320" height="395"/>
         <image name="list1.png" width="320" height="314"/>
         <image name="map1.png" width="320" height="313"/>
         <image name="map2.png" width="320" height="313"/>
