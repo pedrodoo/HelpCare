@@ -260,6 +260,15 @@
                                     <action selector="recordButtonPressed:" destination="IxG-T1-Pi9" eventType="touchUpInside" id="WlL-Ks-8w1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oK2-Mh-m80">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="91" y="484" width="138" height="59"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -269,6 +278,7 @@
                                 <exclude reference="ry8-K2-q80"/>
                                 <exclude reference="8cc-3Z-Qca"/>
                                 <exclude reference="XlC-DU-LNc"/>
+                                <exclude reference="oK2-Mh-m80"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -278,6 +288,7 @@
                                 <include reference="ry8-K2-q80"/>
                                 <include reference="8cc-3Z-Qca"/>
                                 <include reference="XlC-DU-LNc"/>
+                                <include reference="oK2-Mh-m80"/>
                             </mask>
                         </variation>
                     </view>

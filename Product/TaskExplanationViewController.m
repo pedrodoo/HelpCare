@@ -32,12 +32,14 @@
         UIImage *secondScreen = [UIImage imageNamed:@"2.png"];
         [self.recorderImage setImage:secondScreen];
     } else {
-        UIImage *firstScreen = [UIImage imageNamed:@"1.png"];
+        UIImage *firstScreen = [UIImage imageNamed:@"3.png"];
         [self.recorderImage setImage:firstScreen];
     }
     
     
 }
+
+
 
 /*
 #pragma mark - Navigation
