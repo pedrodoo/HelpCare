@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "VideoViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) VideoViewController *videoVC;
@@ -20,25 +21,37 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dismissVideoVC) name:@"dismissVideoVC" object:nil];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    appDelegate.firstTime = YES;
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
     
-    self.videoVC = (VideoViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"videoVC"];
-    self.videoVC.view.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.75];
-    self.videoVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-//    [self presentViewController:self.videoVC animated:YES completion:nil];
-    [self addChildViewController: self.videoVC];
-    //    alertVC.view.frame = ...; //or something equivalent if you're using auto layout
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    [self.view addSubview: self.videoVC.view];
-    [self.videoVC didMoveToParentViewController: self];
+    if (appDelegate.firstTime) {
+        self.videoVC = (VideoViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"videoVC"];
+        self.videoVC.view.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.75];
+        self.videoVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+        //    [self presentViewController:self.videoVC animated:YES completion:nil];
+        [self addChildViewController: self.videoVC];
+        //    alertVC.view.frame = ...; //or something equivalent if you're using auto layout
+        
+        [self.view addSubview: self.videoVC.view];
+        [self.videoVC didMoveToParentViewController: self];
+    }
+    
+    
 }
 
 -(void)dismissVideoVC
 {
+    
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.firstTime = NO;
+    
     [self.videoVC willMoveToParentViewController:nil];
 //    [self.videoVC.view removeFromSuperview];
     [UIView animateWithDuration:0.4
