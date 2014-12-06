@@ -22,6 +22,12 @@
 		B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */; };
 		B29B210B1A33A2EF00685DDB /* kong-poster.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */; };
 		B29B210E1A33A34B00685DDB /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B210D1A33A34B00685DDB /* VideoViewController.m */; };
+		B29B21151A33AB9D00685DDB /* technology.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B210F1A33AB9D00685DDB /* technology.png */; };
+		B29B21161A33AB9D00685DDB /* mobility.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21101A33AB9D00685DDB /* mobility.png */; };
+		B29B21171A33AB9D00685DDB /* medical.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21111A33AB9D00685DDB /* medical.png */; };
+		B29B21181A33AB9D00685DDB /* home chore.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21121A33AB9D00685DDB /* home chore.png */; };
+		B29B21191A33AB9D00685DDB /* errand.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21131A33AB9D00685DDB /* errand.png */; };
+		B29B211A1A33AB9D00685DDB /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21141A33AB9D00685DDB /* text.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,12 @@
 		B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kong-poster.jpeg"; sourceTree = "<group>"; };
 		B29B210C1A33A34B00685DDB /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B29B210D1A33A34B00685DDB /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		B29B210F1A33AB9D00685DDB /* technology.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = technology.png; sourceTree = "<group>"; };
+		B29B21101A33AB9D00685DDB /* mobility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mobility.png; sourceTree = "<group>"; };
+		B29B21111A33AB9D00685DDB /* medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medical.png; sourceTree = "<group>"; };
+		B29B21121A33AB9D00685DDB /* home chore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home chore.png"; sourceTree = "<group>"; };
+		B29B21131A33AB9D00685DDB /* errand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = errand.png; sourceTree = "<group>"; };
+		B29B21141A33AB9D00685DDB /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,12 @@
 		B29B20C11A33804A00685DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29B210F1A33AB9D00685DDB /* technology.png */,
+				B29B21101A33AB9D00685DDB /* mobility.png */,
+				B29B21111A33AB9D00685DDB /* medical.png */,
+				B29B21121A33AB9D00685DDB /* home chore.png */,
+				B29B21131A33AB9D00685DDB /* errand.png */,
+				B29B21141A33AB9D00685DDB /* text.png */,
 				B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */,
 				B29B20F51A3397B200685DDB /* Rectangle 1 + Task history.png */,
 				B29B20F61A3397B200685DDB /* Rectangle 1 + My current tasks.png */,
@@ -225,13 +243,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29B211A1A33AB9D00685DDB /* text.png in Resources */,
 				B29B20CD1A33804A00685DDB /* Main.storyboard in Resources */,
 				B29B210B1A33A2EF00685DDB /* kong-poster.jpeg in Resources */,
 				B29B20FE1A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png in Resources */,
 				B29B20D21A33804A00685DDB /* LaunchScreen.xib in Resources */,
 				B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */,
+				B29B21191A33AB9D00685DDB /* errand.png in Resources */,
+				B29B21171A33AB9D00685DDB /* medical.png in Resources */,
 				B29B20CF1A33804A00685DDB /* Images.xcassets in Resources */,
+				B29B21181A33AB9D00685DDB /* home chore.png in Resources */,
 				B29B20FD1A3397B200685DDB /* Rectangle 1 + I would like help.png in Resources */,
+				B29B21151A33AB9D00685DDB /* technology.png in Resources */,
+				B29B21161A33AB9D00685DDB /* mobility.png in Resources */,
 				B29B20FC1A3397B200685DDB /* Rectangle 1 + My current tasks.png in Resources */,
 				B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */,
 				B29B20FB1A3397B200685DDB /* Rectangle 1 + Task history.png in Resources */,

@@ -29,9 +29,10 @@
     self.videoVC = (VideoViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"videoVC"];
     self.videoVC.view.backgroundColor = [UIColor colorWithWhite:0.3 alpha:0.75];
     self.videoVC.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    [self presentViewController:self.videoVC animated:YES completion:nil];
+//    [self presentViewController:self.videoVC animated:YES completion:nil];
     [self addChildViewController: self.videoVC];
     //    alertVC.view.frame = ...; //or something equivalent if you're using auto layout
+    
     [self.view addSubview: self.videoVC.view];
     [self.videoVC didMoveToParentViewController: self];
 }
@@ -39,8 +40,14 @@
 -(void)dismissVideoVC
 {
     [self.videoVC willMoveToParentViewController:nil];
-    [self.videoVC.view removeFromSuperview];
+//    [self.videoVC.view removeFromSuperview];
+    [UIView animateWithDuration:0.4
+                     animations:^{self.videoVC.view.alpha = 0.0;}
+                     completion:^(BOOL finished){ [self.videoVC.view removeFromSuperview]; }];
+//    [self dismissModalViewControllerAnimated:YES];
     [self.videoVC removeFromParentViewController];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
