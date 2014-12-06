@@ -120,6 +120,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="229" width="320" height="85"/>
                                 </variation>
+                                <connections>
+                                    <segue destination="IxG-T1-Pi9" kind="show" id="EkH-s0-hYm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIT-vy-M1H">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -203,6 +206,90 @@
             </objects>
             <point key="canvasLocation" x="1603.5" y="164"/>
         </scene>
+        <!--Task Explanation View Controller-->
+        <scene sceneID="HRP-Th-Vfj">
+            <objects>
+                <viewController id="IxG-T1-Pi9" customClass="TaskExplanationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rez-Jg-zBm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sfb-c1-p80"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6gb-sd-UGu">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-dL-OJ3">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="224" height="85"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c72-fY-sSK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Rectangle 1 + ?.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="224" y="64" width="96" height="85"/>
+                                </variation>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="explain msg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-K2-q80">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="149" width="320" height="85"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="8cc-3Z-Qca">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="233" width="320" height="335"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XlC-DU-LNc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="307" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="recordButtonPressed:" destination="IxG-T1-Pi9" eventType="touchUpInside" id="WlL-Ks-8w1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Rdg-dL-OJ3"/>
+                                <exclude reference="c72-fY-sSK"/>
+                                <exclude reference="ry8-K2-q80"/>
+                                <exclude reference="8cc-3Z-Qca"/>
+                                <exclude reference="XlC-DU-LNc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Rdg-dL-OJ3"/>
+                                <include reference="c72-fY-sSK"/>
+                                <include reference="ry8-K2-q80"/>
+                                <include reference="8cc-3Z-Qca"/>
+                                <include reference="XlC-DU-LNc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="recorderImage" destination="8cc-3Z-Qca" id="dlg-OW-H2q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7i-II-w5I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2184" y="164"/>
+        </scene>
         <!--Video View Controller-->
         <scene sceneID="Dy4-gQ-F5b">
             <objects>
@@ -274,6 +361,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.png" width="320" height="315"/>
         <image name="Rectangle 1 + ?.png" width="96" height="85"/>
         <image name="Rectangle 1 + Edit Profile + Our volunteers are.png" width="320" height="85"/>
         <image name="Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png" width="224" height="85"/>
@@ -281,6 +369,7 @@
         <image name="Rectangle 1 + My current tasks.png" width="301" height="85"/>
         <image name="Rectangle 1 + Task history.png" width="301" height="85"/>
         <image name="errand.png" width="320" height="85"/>
+        <image name="explain msg.png" width="320" height="85"/>
         <image name="home chore.png" width="320" height="85"/>
         <image name="kong-poster.jpeg" width="326" height="326"/>
         <image name="medical.png" width="320" height="85"/>
