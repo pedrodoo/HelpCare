@@ -14,6 +14,12 @@
 		B29B20CF1A33804A00685DDB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29B20CE1A33804A00685DDB /* Images.xcassets */; };
 		B29B20D21A33804A00685DDB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B29B20D01A33804A00685DDB /* LaunchScreen.xib */; };
 		B29B20DE1A33804A00685DDB /* ProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B20DD1A33804A00685DDB /* ProductTests.m */; };
+		B29B20FB1A3397B200685DDB /* Rectangle 1 + Task history.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F51A3397B200685DDB /* Rectangle 1 + Task history.png */; };
+		B29B20FC1A3397B200685DDB /* Rectangle 1 + My current tasks.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F61A3397B200685DDB /* Rectangle 1 + My current tasks.png */; };
+		B29B20FD1A3397B200685DDB /* Rectangle 1 + I would like help.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F71A3397B200685DDB /* Rectangle 1 + I would like help.png */; };
+		B29B20FE1A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F81A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png */; };
+		B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F91A3397B200685DDB /* Rectangle 1 + ?.png */; };
+		B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,12 @@
 		B29B20D71A33804A00685DDB /* ProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29B20DC1A33804A00685DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B29B20DD1A33804A00685DDB /* ProductTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductTests.m; sourceTree = "<group>"; };
+		B29B20F51A3397B200685DDB /* Rectangle 1 + Task history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + Task history.png"; sourceTree = "<group>"; };
+		B29B20F61A3397B200685DDB /* Rectangle 1 + My current tasks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + My current tasks.png"; sourceTree = "<group>"; };
+		B29B20F71A3397B200685DDB /* Rectangle 1 + I would like help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + I would like help.png"; sourceTree = "<group>"; };
+		B29B20F81A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + Edit Profile + Our volunteers are.png"; sourceTree = "<group>"; };
+		B29B20F91A3397B200685DDB /* Rectangle 1 + ?.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + ?.png"; sourceTree = "<group>"; };
+		B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,12 @@
 		B29B20C11A33804A00685DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29B20F51A3397B200685DDB /* Rectangle 1 + Task history.png */,
+				B29B20F61A3397B200685DDB /* Rectangle 1 + My current tasks.png */,
+				B29B20F71A3397B200685DDB /* Rectangle 1 + I would like help.png */,
+				B29B20F81A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png */,
+				B29B20F91A3397B200685DDB /* Rectangle 1 + ?.png */,
+				B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */,
 				B29B20C21A33804A00685DDB /* Info.plist */,
 				B29B20C31A33804A00685DDB /* main.m */,
 			);
@@ -200,8 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29B20CD1A33804A00685DDB /* Main.storyboard in Resources */,
+				B29B20FE1A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png in Resources */,
 				B29B20D21A33804A00685DDB /* LaunchScreen.xib in Resources */,
+				B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */,
 				B29B20CF1A33804A00685DDB /* Images.xcassets in Resources */,
+				B29B20FD1A3397B200685DDB /* Rectangle 1 + I would like help.png in Resources */,
+				B29B20FC1A3397B200685DDB /* Rectangle 1 + My current tasks.png in Resources */,
+				B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */,
+				B29B20FB1A3397B200685DDB /* Rectangle 1 + Task history.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
