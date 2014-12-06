@@ -782,7 +782,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Schedule Time"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Confirmation"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxN-vf-O18" userLabel="First Responder" sceneMemberID="firstResponder"/>
