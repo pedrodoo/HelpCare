@@ -20,6 +20,8 @@
 		B29B20FE1A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F81A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png */; };
 		B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20F91A3397B200685DDB /* Rectangle 1 + ?.png */; };
 		B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */; };
+		B29B210B1A33A2EF00685DDB /* kong-poster.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */; };
+		B29B210E1A33A34B00685DDB /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B210D1A33A34B00685DDB /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,9 @@
 		B29B20F81A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + Edit Profile + Our volunteers are.png"; sourceTree = "<group>"; };
 		B29B20F91A3397B200685DDB /* Rectangle 1 + ?.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + ?.png"; sourceTree = "<group>"; };
 		B29B20FA1A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png"; sourceTree = "<group>"; };
+		B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "kong-poster.jpeg"; sourceTree = "<group>"; };
+		B29B210C1A33A34B00685DDB /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		B29B210D1A33A34B00685DDB /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +103,8 @@
 				B29B20C81A33804A00685DDB /* ViewController.h */,
 				B29B20C91A33804A00685DDB /* ViewController.m */,
 				B29B20CB1A33804A00685DDB /* Main.storyboard */,
+				B29B210C1A33A34B00685DDB /* VideoViewController.h */,
+				B29B210D1A33A34B00685DDB /* VideoViewController.m */,
 				B29B20CE1A33804A00685DDB /* Images.xcassets */,
 				B29B20D01A33804A00685DDB /* LaunchScreen.xib */,
 				B29B20C11A33804A00685DDB /* Supporting Files */,
@@ -108,6 +115,7 @@
 		B29B20C11A33804A00685DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29B210A1A33A2EF00685DDB /* kong-poster.jpeg */,
 				B29B20F51A3397B200685DDB /* Rectangle 1 + Task history.png */,
 				B29B20F61A3397B200685DDB /* Rectangle 1 + My current tasks.png */,
 				B29B20F71A3397B200685DDB /* Rectangle 1 + I would like help.png */,
@@ -218,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29B20CD1A33804A00685DDB /* Main.storyboard in Resources */,
+				B29B210B1A33A2EF00685DDB /* kong-poster.jpeg in Resources */,
 				B29B20FE1A3397B200685DDB /* Rectangle 1 + Edit Profile + Our volunteers are.png in Resources */,
 				B29B20D21A33804A00685DDB /* LaunchScreen.xib in Resources */,
 				B29B21001A3397B200685DDB /* Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png in Resources */,
@@ -245,6 +254,7 @@
 			files = (
 				B29B20CA1A33804A00685DDB /* ViewController.m in Sources */,
 				B29B20C71A33804A00685DDB /* AppDelegate.m in Sources */,
+				B29B210E1A33A34B00685DDB /* VideoViewController.m in Sources */,
 				B29B20C41A33804A00685DDB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +446,7 @@
 				B29B20E31A33804A00685DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B29B20E41A33804A00685DDB /* Build configuration list for PBXNativeTarget "ProductTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +455,7 @@
 				B29B20E61A33804A00685DDB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

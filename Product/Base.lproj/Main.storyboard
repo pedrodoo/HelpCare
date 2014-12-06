@@ -13,18 +13,9 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pt-yy-DuR">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="189" width="320" height="379"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="YGB-Gt-31m" kind="embed" id="cF9-bf-tc4"/>
-                                </connections>
-                            </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNO-q6-Dw7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Rectangle 1 + Edit Profile + Oval 3 + Oval 2.png">
@@ -49,22 +40,53 @@
                                     <rect key="frame" x="0.0" y="105" width="320" height="85"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-yi-6mP">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Rectangle 1 + I would like help.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="231" width="301" height="85"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diE-EK-LK5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Rectangle 1 + My current tasks.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="324" width="301" height="85"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-KF-Rva">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Rectangle 1 + Task history.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="417" width="301" height="85"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="4pt-yy-DuR"/>
                                 <exclude reference="mNO-q6-Dw7"/>
                                 <exclude reference="lpZ-Ec-lRK"/>
                                 <exclude reference="58g-ZM-5P8"/>
+                                <exclude reference="2ab-yi-6mP"/>
+                                <exclude reference="diE-EK-LK5"/>
+                                <exclude reference="gU7-KF-Rva"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="4pt-yy-DuR"/>
                                 <include reference="mNO-q6-Dw7"/>
                                 <include reference="lpZ-Ec-lRK"/>
                                 <include reference="58g-ZM-5P8"/>
+                                <include reference="2ab-yi-6mP"/>
+                                <include reference="diE-EK-LK5"/>
+                                <include reference="gU7-KF-Rva"/>
                             </mask>
                         </variation>
                     </view>
@@ -73,68 +95,58 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="135"/>
+            <point key="canvasLocation" x="30" y="164"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Rjp-Ko-LXa">
+        <!--Video View Controller-->
+        <scene sceneID="Dy4-gQ-F5b">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="YGB-Gt-31m" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="videoVC" id="3PD-Ak-Zog" customClass="VideoViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="SKc-Ge-WFB"/>
-                        <viewControllerLayoutGuide type="bottom" id="stM-rk-WlN"/>
+                        <viewControllerLayoutGuide type="top" id="hwK-ct-KMS"/>
+                        <viewControllerLayoutGuide type="bottom" id="LXd-Ry-Pso"/>
                     </layoutGuides>
-                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XLb-JQ-cF8">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="BPC-4J-4if">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0B-2A-Y3z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kong-poster.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Clw-iJ-r9F">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="184" width="247" height="199"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlA-U5-ufI">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="Rectangle 1 + I would like help.png">
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="CLOSE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="54" width="301" height="85"/>
+                                    <rect key="frame" x="109" y="398" width="102" height="61"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-pH-IJq">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="Rectangle 1 + My current tasks.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="147" width="301" height="85"/>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YO7-jD-lvV">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="Rectangle 1 + Task history.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="10" y="240" width="301" height="85"/>
-                                </variation>
+                                <connections>
+                                    <action selector="dismissScreen:" destination="3PD-Ak-Zog" eventType="touchUpInside" id="nsU-YC-jDb"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="P0B-2A-Y3z"/>
-                                <exclude reference="sPc-pH-IJq"/>
-                                <exclude reference="YO7-jD-lvV"/>
+                                <exclude reference="Clw-iJ-r9F"/>
+                                <exclude reference="OlA-U5-ufI"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="P0B-2A-Y3z"/>
-                                <include reference="sPc-pH-IJq"/>
-                                <include reference="YO7-jD-lvV"/>
+                                <include reference="Clw-iJ-r9F"/>
+                                <include reference="OlA-U5-ufI"/>
                             </mask>
                         </variation>
                     </view>
-                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xkb-NH-iGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L6v-Jx-Mug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149.25" y="841"/>
+            <point key="canvasLocation" x="739.5" y="164"/>
         </scene>
     </scenes>
     <resources>
@@ -144,5 +156,6 @@
         <image name="Rectangle 1 + I would like help.png" width="301" height="85"/>
         <image name="Rectangle 1 + My current tasks.png" width="301" height="85"/>
         <image name="Rectangle 1 + Task history.png" width="301" height="85"/>
+        <image name="kong-poster.jpeg" width="326" height="326"/>
     </resources>
 </document>
