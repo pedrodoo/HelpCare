@@ -110,6 +110,7 @@
                         <viewControllerLayoutGuide type="bottom" id="NcR-hn-rHs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="58W-6D-Gym">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50Z-nb-RaC">
@@ -218,6 +219,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Sfb-c1-p80"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6gb-sd-UGu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-dL-OJ3">
@@ -319,6 +321,7 @@
                         <viewControllerLayoutGuide type="bottom" id="8Cz-lj-fiQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kgz-mK-vGn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-bt-iaJ">
@@ -402,6 +405,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0nz-B1-k05"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mgd-vt-IZP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-UH-Ihk">
@@ -485,9 +489,10 @@
                         <viewControllerLayoutGuide type="bottom" id="LXd-Ry-Pso"/>
                     </layoutGuides>
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="BPC-4J-4if">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kong-poster.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="Clw-iJ-r9F">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video-play-2.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Clw-iJ-r9F">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="37" y="184" width="247" height="199"/>
@@ -554,6 +559,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BbG-M6-G6E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="csb-EV-jan">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkS-zu-reb">
@@ -637,6 +643,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TQW-z5-hs7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LfO-aX-HJ2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDx-rb-bNw">
@@ -737,6 +744,7 @@
                         <viewControllerLayoutGuide type="bottom" id="etW-sb-pzk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x0D-am-ecJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-YX-IJr">
@@ -802,7 +810,6 @@
         <image name="explain msg.png" width="320" height="85"/>
         <image name="form1.png" width="320" height="314"/>
         <image name="home chore.png" width="320" height="85"/>
-        <image name="kong-poster.jpeg" width="326" height="326"/>
         <image name="lastone.png" width="320" height="395"/>
         <image name="list1.png" width="320" height="314"/>
         <image name="map1.png" width="320" height="313"/>
@@ -810,6 +817,7 @@
         <image name="medical.png" width="320" height="85"/>
         <image name="mobility.png" width="320" height="85"/>
         <image name="text.png" width="320" height="85"/>
+        <image name="video-play-2.gif" width="988" height="937"/>
         <image name="whentext.png" width="320" height="85"/>
         <image name="wheretext.png" width="320" height="85"/>
     </resources>

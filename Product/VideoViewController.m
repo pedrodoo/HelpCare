@@ -18,7 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-
+    NSString *videoPath =[[NSBundle mainBundle] pathForResource:@"IMG_2796" ofType:@"mov"];
+    
+    NSString *htmlString=[NSString stringWithFormat:@"<body> <video src=\"%@\" controls autoplay height=\"400\" width=\"300\" > </video> </body>", videoPath];
+    
+    NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]];
+    [self.videoPlayer loadHTMLString:htmlString baseURL:baseURL];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,4 +10,5 @@
 
 @interface VideoViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIWebView *videoPlayer;
 @end

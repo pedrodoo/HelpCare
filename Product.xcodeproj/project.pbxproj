@@ -49,6 +49,8 @@
 		B29B21551A33BDDA00685DDB /* wheretext.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B214E1A33BDDA00685DDB /* wheretext.png */; };
 		B29B21571A33C24E00685DDB /* lastone.png in Resources */ = {isa = PBXBuildFile; fileRef = B29B21561A33C24E00685DDB /* lastone.png */; };
 		B29B215A1A33C35700685DDB /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29B21591A33C35700685DDB /* ScheduleViewController.m */; };
+		B29B215C1A33C4A100685DDB /* video-play-2.gif in Resources */ = {isa = PBXBuildFile; fileRef = B29B215B1A33C4A100685DDB /* video-play-2.gif */; };
+		B29B215E1A33C58B00685DDB /* IMG_2796.MOV in Resources */ = {isa = PBXBuildFile; fileRef = B29B215D1A33C58B00685DDB /* IMG_2796.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +115,8 @@
 		B29B21561A33C24E00685DDB /* lastone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lastone.png; sourceTree = "<group>"; };
 		B29B21581A33C35700685DDB /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
 		B29B21591A33C35700685DDB /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		B29B215B1A33C4A100685DDB /* video-play-2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "video-play-2.gif"; sourceTree = "<group>"; };
+		B29B215D1A33C58B00685DDB /* IMG_2796.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2796.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 		B29B20C11A33804A00685DDB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29B215D1A33C58B00685DDB /* IMG_2796.MOV */,
+				B29B215B1A33C4A100685DDB /* video-play-2.gif */,
 				B29B21471A33BDDA00685DDB /* yo */,
 				B29B211B1A33B38D00685DDB /* rec */,
 				B29B210F1A33AB9D00685DDB /* technology.png */,
@@ -347,6 +353,7 @@
 				B29B20CF1A33804A00685DDB /* Images.xcassets in Resources */,
 				B29B21221A33B38D00685DDB /* explain msg.png in Resources */,
 				B29B21181A33AB9D00685DDB /* home chore.png in Resources */,
+				B29B215C1A33C4A100685DDB /* video-play-2.gif in Resources */,
 				B29B21241A33B38D00685DDB /* rec1.png in Resources */,
 				B29B20FD1A3397B200685DDB /* Rectangle 1 + I would like help.png in Resources */,
 				B29B21261A33B38D00685DDB /* text box.png in Resources */,
@@ -360,6 +367,7 @@
 				B29B20FF1A3397B200685DDB /* Rectangle 1 + ?.png in Resources */,
 				B29B21571A33C24E00685DDB /* lastone.png in Resources */,
 				B29B20FB1A3397B200685DDB /* Rectangle 1 + Task history.png in Resources */,
+				B29B215E1A33C58B00685DDB /* IMG_2796.MOV in Resources */,
 				B29B21511A33BDDA00685DDB /* list1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
